@@ -1,0 +1,134 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.trama {
+    background-image: url("{{ url_for('static', filename='img/trama.png')}}");
+    background-size: 300px;
+    background-position: center; /* Centra la imagen */
+    margin-top: 50px;       
+}
+
+body {
+    height: 100%;
+   
+    background-image: url("{{ url_for('static', filename='img/trama.png')}}");
+   /* background-size: contain; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+   /*  background-repeat: repeat; /* Evita que la imagen se repita */
+   /*  background-position: center; /* Centra la imagen */
+  
+  }
+
+
+body{
+	background: hsl(150, 75%, 78%);
+    /*background: #313D52;*/
+    background: #012e46;
+    
+}
+
+header{
+	width: 100%;
+}
+
+.navegacion{
+	width: 650px;
+	margin: 20px auto;
+	/*background: #fff;*/
+    background: #ece7e7;
+    font-weight: bold;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+    font-size: 20px;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	/*color: #35cead;*/
+    color: #35cec1;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 200%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 10px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+
+.btn-custom {
+
+	margin: 0;
+	padding: 0;
+    list-style: none;
+	display: block;
+	padding: 12px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+    font-size: 20px;
+	text-decoration: none;
+    
+  }
+  
+.btn-custom > a{
+    
+    text-decoration: none;
+    display: inline-block; /*alineados en la misma fila*/
+    padding: 0px 20px; /*margen superior 15px y a los costados 20px*/
+    color: #353535;
+    font-family: 'Open sans';
+    text-decoration: none; /*Sin alineado*/
+    size: 4px;
+}
+
+  
+.btn-custom a:hover{
+	/*color: #35cead;*/
+    color: #35cec1;
+	transition: all .3s;
+    text-decoration: none;
+}
+
+
+#initial-image {
+    display: block;
+    margin: 100 auto;
+    max-width: 80%;
+  }

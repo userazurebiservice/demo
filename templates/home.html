@@ -1,0 +1,21 @@
+{% extends './base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<h1>Bienvenido, {{ current_user.fullname }}</h1>
+<a class="btn btn-secondary" href="{{ url_for('logout') }}">Logout</a>
+{% endblock %}
+
+
+
+{% extends './base.html' %}{% block title %}Home{% endblock %}{% block body %}
+<div align-items: center; class="d-flex justify-content-between">
+    <h1>Bienvenido, {{ current_user.fullname }}</h1>  {% include 'menuMRC.html' %}
+</div><a class="btn btn-secondary" href="{{ url_for('logout') }}">Logout</a>
+{% endblock %}
+
+
+.d-flex {
+    align-items: center; /* Centra verticalmente los elementos */
+  }

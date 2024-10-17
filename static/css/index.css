@@ -1,0 +1,56 @@
+/*
+  Copyright (c) Microsoft Corporation.
+  Licensed under the MIT license.
+*/
+
+header {
+    background-color: hsl(241, 100%, 50%);
+    height: 60px;
+    width: 100%;
+}
+
+header > p {
+    color: #f8f40b;
+    font: bold 2.6em "segoe ui", arial, sans-serif;
+    margin-left: 31px;
+    padding-top: 10px;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    
+}
+
+section#text-container > div > p {
+    font: 1.0em "segoe ui", arial, sans-serif;
+}
+
+section#report-container {
+    height: 100% /*calc(0.5625 * 60vw);  16:9 aspect ratio */
+}
+
+
+footer > p {
+    font: 0.7em "segoe ui", arial, sans-serif;
+}
+
+iframe {
+    border: none;
+
+}
+
+/* 14-08-2024 formato para lista de reportes*/
+section#report-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 10%;
+  }
+
+  #report-list li {
+    width: 30%;
+    margin-bottom: 20px;
+    /* Agrega aquí cualquier estilo adicional para los items de la lista */
+  }
