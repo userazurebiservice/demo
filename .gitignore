@@ -1,0 +1,8 @@
+# Descarta archivos de caché y build
+__pycache__/
+ 
+# Descarta archivos de entorno virtual
+env/
+
+# Descarta archivos de variables de entorno
+.env/
